@@ -1,7 +1,6 @@
-/* global describe, should */
+/* global describe, it */
 
 var exec = require('child_process').exec
-var setBlocking = require('../')
 
 require('chai').should()
 
@@ -17,6 +16,7 @@ describe('setBlocking', function () {
 
   it('does not truncate text printed to stderr when process.exit() is called', function (done) {
     exec('./test/fixtures/yargs-497-stderr.js', function (err, stdout, stderr) {
+      err.should.match(/Command failed/)
       stderr.should.match(/line 2999/)
       return done()
     })
