@@ -16,6 +16,7 @@
     "flush",
     "terminal",
     "blocking",
+    "shim",
     "stdio",
     "stderr"
   ],

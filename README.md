@@ -5,7 +5,7 @@
 [![Coverage Status](https://coveralls.io/repos/yargs/set-blocking/badge.svg?branch=)](https://coveralls.io/r/yargs/set-blocking?branch=master)
 [![Standard Version](https://img.shields.io/badge/release-standard%20version-brightgreen.svg)](https://github.com/conventional-changelog/standard-version)
 
-set blocking `stdio` and `stderr` ensuring that terminal output does not truncate
+set blocking `stdio` and `stderr` ensuring that terminal output does not truncate.
 
 ```js
 const setBlocking = require('set-blocking')
