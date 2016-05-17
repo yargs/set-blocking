@@ -15,7 +15,7 @@ console.log(someLargeStringToOutput)
 
 ## Historical Context/Word of Warning
 
-This shim was created as a shim to address the bug discussed in [node #6456](https://github.com/nodejs/node/issues/6456). This bug crops up on
+This was created as a shim to address the bug discussed in [node #6456](https://github.com/nodejs/node/issues/6456). This bug crops up on
 newer versions of Node.js (`0.12+`). You should be mindful of the side-effects
 caused by `set-blocking`:
 
