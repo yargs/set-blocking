@@ -16,8 +16,9 @@ console.log(someLargeStringToOutput)
 ## Historical Context/Word of Warning
 
 This was created as a shim to address the bug discussed in [node #6456](https://github.com/nodejs/node/issues/6456). This bug crops up on
-newer versions of Node.js (`0.12+`). You should be mindful of the side-effects
-caused by `set-blocking`:
+newer versions of Node.js (`0.12+`), truncating terminal output.
+
+You should be mindful of the side-effects caused by using `set-blocking`:
 
 * if your module sets blocking to `true`, it will effect other modules
   consuming your library. In [yargs](https://github.com/yargs/yargs/blob/master/yargs.js#L653) we only call
