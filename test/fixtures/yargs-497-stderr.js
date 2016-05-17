@@ -1,5 +1,9 @@
 #!/usr/bin/env node
 
+// pretend we are a TTY
+process.stdout.isTTY = true
+process.stderr.isTTY = true
+
 // see: https://github.com/yargs/yargs/issues/497
 var buffer = ''
 for (var i = 0; i < 3000; i++) {
