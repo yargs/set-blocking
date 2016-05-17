@@ -1,6 +1,6 @@
 {
   "name": "set-blocking",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "set blocking stdio and stderr ensuring that terminal output does not truncate",
   "main": "index.js",
   "scripts": {
