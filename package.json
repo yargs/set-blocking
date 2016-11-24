@@ -30,10 +30,10 @@
   "devDependencies": {
     "chai": "^3.5.0",
     "coveralls": "^2.11.9",
-    "mocha": "^2.4.5",
-    "nyc": "^6.4.4",
-    "standard": "^7.0.1",
-    "standard-version": "^2.2.1"
+    "mocha": "^3.1.2",
+    "nyc": "^10.0.0",
+    "standard": "^8.6.0",
+    "standard-version": "^3.0.0"
   },
   "files": [
     "index.js",
