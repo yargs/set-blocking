@@ -11,3 +11,10 @@ test_script:
   - node --version
   - npm --version
   - npm test
+
+os:
+  - Windows Server 2012 R2
+
+build: off
+
+version: "{build}"
