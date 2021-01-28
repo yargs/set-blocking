@@ -5,7 +5,7 @@
 [![Coverage Status](https://coveralls.io/repos/yargs/set-blocking/badge.svg?branch=)](https://coveralls.io/r/yargs/set-blocking?branch=master)
 [![Standard Version](https://img.shields.io/badge/release-standard%20version-brightgreen.svg)](https://github.com/conventional-changelog/standard-version)
 
-set blocking `stdio` and `stderr` ensuring that terminal output does not truncate.
+Set blocking `stdio` and `stderr` ensuring that terminal output does not truncate.
 
 ```js
 const setBlocking = require('set-blocking')
@@ -20,10 +20,10 @@ newer versions of Node.js (`0.12+`), truncating terminal output.
 
 You should be mindful of the side-effects caused by using `set-blocking`:
 
-* if your module sets blocking to `true`, it will effect other modules
+* If your module sets blocking to `true`, it will affect other modules
   consuming your library. In [yargs](https://github.com/yargs/yargs/blob/master/yargs.js#L653) we only call
   `setBlocking(true)` once we already know we are about to call `process.exit(code)`.
-* this patch will not apply to subprocesses spawned with `isTTY = true`, this is
+* This patch will not apply to subprocesses spawned with `isTTY = true`, this is
   the [default `spawn()` behavior](https://nodejs.org/api/child_process.html#child_process_child_process_spawn_command_args_options).
 
 ## License
